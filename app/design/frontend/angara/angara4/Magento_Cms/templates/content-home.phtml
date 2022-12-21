@@ -1,0 +1,45 @@
+
+
+<div class="main-container col2-left-layout">
+	<div class="container-inner">
+
+		<div class="top-banner row">
+			<div class="banner-left col-md-9 col-sm-12 col-xs-12 ">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+			</div>
+			<div class="banner-right col-md-3 col-sm-12 col-xs-12">
+				<div class="banner-home-top">
+					<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home_top_angara4')->toHtml(); ?>
+				</div>
+			</div>
+		</div>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static2_home4')->toHtml(); ?>
+		
+		<div class="catgory1 catgory-iner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category1_home4')->toHtml(); ?>
+		</div>
+		<div class="catgory2 catgory-iner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category2_home4')->toHtml(); ?>
+		</div>
+		<div class="catgory3 catgory-iner">
+		
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category3_home4')->toHtml(); ?>
+		</div>
+		<div class="catgory4 catgory-iner">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category4_home4')->toHtml(); ?>
+		</div>
+
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('Plazathemes_Brandslider::brandslider.phtml')->toHtml();?>
+
+	</div>
+	
+	
+</div>
+
+

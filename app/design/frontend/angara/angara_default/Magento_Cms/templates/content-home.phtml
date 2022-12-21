@@ -1,0 +1,57 @@
+
+
+<div class="main-container col2-left-layout">
+	<div class="container-inner">
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static1_home1_home2')->toHtml(); ?>
+		<div class="top-banner">
+			<div class="banner-left">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+			</div>
+			<div class="banner-right">
+				<div class="banner-home-top">
+					<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('banner_home_top_angara1')->toHtml(); ?>
+				</div>
+			</div>
+		</div>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Saleproductslider\Block\Saleproductslider')->setTemplate('saleproductslider.phtml')->toHtml();?>	
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static2_home1')->toHtml(); ?>
+		<div class="row">
+			<div class=" col-md-9">
+				<div class="category-top1 category-top">
+					<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('products_category1')->toHtml(); ?>
+				</div>
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static4_home1')->toHtml(); ?>
+				
+				<div class="category-top2 category-top">
+					<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('products2_category1')->toHtml(); ?>
+				</div>
+				
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static5_home1')->toHtml(); ?>
+			</div>
+			<div class="col-md-3">
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Bestsellerproduct\Block\Bestsellerproduct')->setTemplate('Plazathemes_Bestsellerproduct::bestsellerproduct.phtml')->toHtml();?>
+				
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Testimonial\Block\Testimonial')->setTemplate('Plazathemes_Testimonial::testimonial.phtml')->toHtml();?>
+				
+				<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static3_home1')->toHtml(); ?>
+				
+			</div>
+			
+		</div>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Categorytop\Block\Categorytop')->setTemplate('Plazathemes_Categorytop::categorytop.phtml')->toHtml();?>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Brandslider\Block\Brandslider')->setTemplate('Plazathemes_Brandslider::brandslider.phtml')->toHtml();?>
+
+	</div>
+	
+	
+</div>
+
+

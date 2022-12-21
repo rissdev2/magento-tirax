@@ -1,0 +1,56 @@
+
+
+<div class="main-container col2-left-layout">
+	<div class="top-home">
+		<div class="container-inner">
+			<div class="top-banner">
+				<div class="left">
+					
+				</div>
+				<div class="right">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+				</div>
+			</div>
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static1_home3')->toHtml(); ?>
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static2_home3')->toHtml(); ?>
+			
+		</div>
+	</div>
+	<div class="conten-home">
+		<div class="container-inner">	
+			
+			<div class="category-top1 category-top">
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category1_home3')->toHtml(); ?>
+			</div>
+			
+			<div class="category-top2 category-top">
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category2_home3')->toHtml(); ?>
+			</div>
+			
+			<div class="category-top3 category-top">
+				<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category4_home3')->toHtml(); ?>
+			</div>
+				
+			
+
+		</div>
+	</div>
+	<div class="botoom-home">
+		<div class="container-inner">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category3_home3')->toHtml(); ?>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				</div>
+			</div>
+			
+			<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+			
+		</div>
+	</div>
+	
+</div>
+
+

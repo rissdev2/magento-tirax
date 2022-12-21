@@ -1,0 +1,63 @@
+
+
+<div class="main-container col2-left-layout">
+	<div class="container-inner">
+		
+		<div class="top-banner">
+			<div class="row">
+				<div class="col-md-3">
+					
+				</div>
+				<div class="col-md-9">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Bannerslider\Block\Bannerslider')->setTemplate('Plazathemes_Bannerslider::bannerslider.phtml')->toHtml();?>
+				</div>
+				
+			</div>
+		</div>
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static1_home1_home2')->toHtml(); ?>
+		
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Newproductslider\Block\Newproductslider')->setTemplate('Plazathemes_Newproductslider::newproductslider.phtml')->toHtml();?>
+		
+		
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static4_home2')->toHtml(); ?>
+		<div class="static_category1">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category1_home2')->toHtml(); ?>
+		</div>
+		
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static5_home2')->toHtml(); ?>
+		
+		<div class="static_category2">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category2_home_home2')->toHtml(); ?>
+		</div>
+		
+		
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static6_home2')->toHtml(); ?>
+		
+		<div class="static_category3">
+			<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category3_home_home2')->toHtml(); ?>
+		</div>
+		<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('static7_home2')->toHtml(); ?>
+		<div class="bottom">
+			<div class="row">
+				<div class=" col-md-6">
+					<div class="category-top">
+						<?php  echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('category2_home2')->toHtml(); ?>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<?php echo $block->getLayout()->createBlock('Plazathemes\Featureproductslider\Block\Featureproductslider')->setTemplate('Plazathemes_Featureproductslider::featureproductslider.phtml')->toHtml();?>
+				</div>
+				
+			</div>
+		</div>
+		<?php echo $block->getLayout()->createBlock('Plazathemes\Blog\Block\Sidebar\Recent')->setTemplate('Plazathemes_Blog::sidebar/slider.phtml')->toHtml();?>
+
+	</div>
+	
+	
+</div>
+
+
